@@ -1,12 +1,12 @@
 # dev.to fetch ✌️
 
-We can agree that [dev.to](https://dev.to/) is the best dev spot in the world. What if you want to cross-post your dev articles into your own personal [jamstack](https://jamstack.org/) blog site, but too lazy to copy-paste each post? 😴
+We can agree that [dev.to](https://dev.to/) is the best dev spot in the world. What if you want to cross-post your dev articles into your own personal blog site, but too lazy to copy-paste each post? 😴
 
-Now you can fetch all your DEV posts and put them in your personal blog easily. 😱
+Now you can fetch all your DEV posts in markdown easily! 😱
 
 # Getting started
 
-Clone the repo, install all dependencies, and create `content/` directory in project root.
+Clone the repo, install all dependencies, and create `content/` directory in project root. The files will go in there
 
 ```
 git clone https://github.com/iggredible/dev-fetch-articles.git
