@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fetch-dev": "node fetchDev.js"
   },
   "keywords": [],
   "author": "Igor L Irianto <igoririanto@rocketmail.com>",

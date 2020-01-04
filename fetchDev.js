@@ -12,10 +12,10 @@ const options = {
   headers: { 'api-key': process.env.DEV_KEY }
 }
 const contentDir = '/content/'
+const contentPath = __dirname + contentDir
 
 /* if we want to empty content dir */
 // const fse = require('fs-extra')
-// const contentPath = __dirname + contentDir
 // fse.emptyDirSync(contentPath)
 
 axios
