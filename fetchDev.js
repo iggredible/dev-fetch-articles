@@ -19,7 +19,7 @@ const dir = './content'
 
 if (!fs.existsSync(dir)){
     fs.mkdirSync(dir);
-}
+} // if it exists, then we need to clear it up first
 
 axios
   .get(URL, options)
@@ -31,11 +31,14 @@ axios
         .toLowerCase()
       const normalizedPublishedAt = article.published_at.split('T')[0]
       const fileName = `${normalizedPublishedAt}_${normalizedTitle}.md`
+      const markdown = article.body_markdown.split('\n')
+      const markdownDate = `date: '${normalizedPublishedAt}'`
+      let markdownSplice = markdown.splice(2, 0, markdownDate)
 
       console.log(`${contentDir}${fileName} created!`)
       fs.writeFileSync(
         `${contentPath}${fileName}`,
-        article.body_markdown,
+        markdown.join('\n'),
         'utf-8'
       )
     })
