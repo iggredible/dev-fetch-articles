@@ -13,8 +13,8 @@ git clone https://github.com/iggredible/dev-fetch-articles.git
 cd dev-fetch-articles
 npm install
 mkdir content
-mkdir .env
-// create a key called DEV_KEY and give it your dev key values from dev.to site
+echo "DEV_KEY={YOUR_DEV_KEY}" >> .env
+// replace {YOUR_DEV_KEY} with your dev key values from the dev.to site
 ```
 
 This script uses [dotenv](https://github.com/motdotla/dotenv) to store your DEV_KEY info. Create a `.env` file in project root and add `DEV_KEY=YOUR_DEV_KEY_HERE` (you can find your `DEV_KEY` inside *Settings -> Account* on [dev.to](https://dev.to/) site).
