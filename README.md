@@ -21,7 +21,7 @@ This script uses [dotenv](https://github.com/motdotla/dotenv) to store your DEV_
 
 # Usage
 
-Easy! Just run `npm run fetch-dev`. You will find all your articles inside `content/` folder you just created. You can use this script into your app or use this script to generate content that you can copy to your app.
+Easy! Just run `npm run fetch-dev`. You will find all your articles inside the newly created `content/` directory. You can use this script into your app or use this script to generate content that you can copy to your app.
 
 # Contributions
 
