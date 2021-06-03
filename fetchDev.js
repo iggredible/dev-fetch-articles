@@ -9,14 +9,17 @@ const path = require('path')
 const URL = 'https://dev.to/api/articles/me/published'
 
 const options = {
-  headers: { 'api-key': process.env.DEV_KEY }
+  headers: { 'api-key': process.env.DEV_KEY },
+  params: { 'per_page' : 1000 }
 }
 const contentDir = '/content/'
 const contentPath = __dirname + contentDir
 
-/* if we want to empty content dir */
-// const fse = require('fs-extra')
-// fse.emptyDirSync(contentPath)
+const dir = './content'
+
+if (!fs.existsSync(dir)){
+    fs.mkdirSync(dir);
+}
 
 axios
   .get(URL, options)
